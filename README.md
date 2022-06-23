@@ -1,2 +1,2 @@
 # goit-markup-hw-html-css
-Home work for HTML+CSS course
+Work for HTML+CSS course
