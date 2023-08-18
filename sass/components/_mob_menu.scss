@@ -1,6 +1,19 @@
 .mob_menu__icon-open {
+	// display: block;
 	margin-top: 10px;
 	margin-bottom: 10px;
+	@media screen and (min-width: 768px) {
+		display: none;
+	}
+}
+.mob_menu__icon-close {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	@media screen and (min-width: 480px) {
+		top: -37px;
+		right: -25px;
+	}
 }
 .mob_menu__icon-open,
 .mob_menu__icon-close {
@@ -8,9 +21,6 @@
 	cursor: pointer;
 	fill: currentColor;
 	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-	@media screen and (min-width: 768px) {
-		display: none;
-	}
 	&:hover,
 	&:focus {
 		color: var(--acent_color);
@@ -42,15 +52,6 @@
 .mob_menu__top,
 .mob_menu__bottom {
 	margin-right: auto;
-}
-.mob_menu__icon-close {
-	position: absolute;
-	top: 10px;
-	right: 15px;
-	@media screen and (min-width: 480px) {
-		top: -37px;
-		right: -25px;
-	}
 }
 .mob_menu__item,
 .mob_menu__contacts_item {

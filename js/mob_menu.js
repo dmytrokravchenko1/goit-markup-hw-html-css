@@ -11,4 +11,13 @@
   function toggleMenu() {
     refs.menu.classList.toggle("is-hidden");
   }
+
+  window.addEventListener('resize', hideMenu);
+
+  function hideMenu() {
+    const width = document.body.clientWidth;
+    if (width >= 768) {
+      refs.menu.classList.add("is-hidden");
+    };
+  }
 })();
